@@ -1,0 +1,49 @@
+{
+  "pages": [
+    { "title": "PMP CERTIFICATION COMMAND CENTER | Nita 5⭐️", "type": "page", "children": [] },
+    { "title": "Study Plan & Timeline", "type": "page", "children": [] },
+    { "title": "35-Hour Course Modules", "type": "page", "children": [] },
+    { "title": "KPIs & Progress Tracker", "type": "page", "children": [] },
+    { "title": "Mock Exams & Simulations", "type": "page", "children": [] },
+    { "title": "Flashcards", "type": "page", "children": [] },
+    { "title": "Notes & Summaries", "type": "page", "children": [] },
+    { "title": "TagZone", "type": "page", "children": [] },
+    { "title": "Resources & Help", "type": "page", "children": [] },
+    { "title": "Help & Guide", "type": "page", "children": [] },
+    { "title": "Ask Nita", "type": "page", "children": [] },
+    { "title": "System Utilities", "type": "page", "children": [] }
+  ],
+  "databases": [
+    {
+      "name": "Course Modules",
+      "properties": {
+        "Course Name": "title",
+        "Platform": "select",
+        "Duration (h)": "number",
+        "Assigned To": "select",
+        "Completed": "checkbox",
+        "Tags": "multi_select"
+      }
+    },
+    {
+      "name": "Flashcards",
+      "properties": {
+        "Question": "title",
+        "Answer": "text",
+        "Domain": "select",
+        "Difficulty": "select",
+        "Assigned To": "select",
+        "Reviewed": "checkbox"
+      }
+    },
+    {
+      "name": "Snippets",
+      "properties": {
+        "Title": "title",
+        "Content": "text",
+        "Tags": "multi_select",
+        "Visible": "checkbox"
+      }
+    }
+  ]
+}
