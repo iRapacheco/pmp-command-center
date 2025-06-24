@@ -23,11 +23,11 @@ This repo provides a JSON structure and a Python script to build the
    - Go to **Settings → Connections**, find your integration, and **Add to a page** → **PMP Import Root**.
 
 3. **Run the import**
-   ```bash
-   git clone https://github.com/iRapacheco/pmp-command-center-import.git
-   cd pmp-command-center-import
-   python import_template.py --token YOUR_TOKEN --parent YOUR_PAGE_ID
-   ```
+```bash
+git clone https://github.com/iRapacheco/pmp-command-center.git
+cd pmp-command-center
+python import_template.py --token YOUR_TOKEN --parent YOUR_PAGE_ID
+```
 
 4. **Finalize in Notion**
    - Open each database view and set **Filters/Sorts** as needed.
