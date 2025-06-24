@@ -21,7 +21,11 @@ def create_databases(notion, parent_id, dbs):
     for db in dbs:
         props = {}
         for name, ptype in db["properties"].items():
-            props[name] = {"type": ptype, ptype: {}}
+            # Notion uses "rich_text" instead of "text" for database property types
+            if ptype == "text":
+                ptype = "rich_text"
+            # The Notion API expects only the property type key
+            props[name] = {ptype: {}}
         newdb = notion.databases.create(
             parent={"page_id": parent_id},
             title=[{"type": "text", "text": {"content": db["name"]}}],
