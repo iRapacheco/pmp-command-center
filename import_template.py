@@ -2,7 +2,7 @@ import json, sys
 from notion_client import Client
 
 def load_structure(path="pmp_template.json"):
-    with open(path, "r") as f:
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def create_pages(notion, parent_id, pages):
