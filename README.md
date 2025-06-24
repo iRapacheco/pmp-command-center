@@ -24,8 +24,8 @@ This repo provides a JSON structure and a Python script to build the
 
 3. **Run the import**
    ```bash
-   git clone https://github.com/iRapacheco/pmp-command-center-import.git
-   cd pmp-command-center-import
+   git clone https://github.com/iRapacheco/pmp-command-center.git
+   cd pmp-command-center
    python import_template.py --token YOUR_TOKEN --parent YOUR_PAGE_ID
    ```
 
